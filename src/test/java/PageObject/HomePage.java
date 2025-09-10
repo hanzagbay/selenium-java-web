@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,6 +16,10 @@ public class HomePage {
 
     @FindBy(linkText = "Dropdown")
     private WebElement dropDownLink;
+
+    public void clickLink(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
+    }
 
     public void clickDropDownLink() {
         dropDownLink.click();

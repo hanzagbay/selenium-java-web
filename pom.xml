@@ -53,6 +53,14 @@
             <artifactId>selenium-devtools-v139</artifactId>
             <version>4.35.0</version>
         </dependency>
+
+        <!-- Junit 5 parameterize -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
